@@ -88,8 +88,8 @@ export default function Landing() {
             <Link to="/projects" className="text-foreground hover:text-muted-foreground transition-colors">Projects</Link>
             <Link to="/contact" className="text-foreground hover:text-muted-foreground transition-colors">Contact</Link>
           </nav>
-          <Button variant="outline" size="sm">
-            <a href="https://drive.google.com/file/d/1l_f42mf_I6Nc_VOA0v1h8Uxp7sr2wOBZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center">
+          <Button size="sm" className="bg-black hover:bg-gray-800 text-white border border-black">
+            <a href="https://drive.google.com/file/d/1l_f42mf_I6Nc_VOA0v1h8Uxp7sr2wOBZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
               <Download className="w-4 h-4 mr-2" />
               Resume
             </a>
@@ -122,14 +122,14 @@ export default function Landing() {
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button size="lg" className="bg-primary hover:bg-primary/80">
-                  <Link to="/projects" className="flex items-center">
+                <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black">
+                  <Link to="/projects" className="flex items-center text-white">
                     View My Work
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg">
-                  <a href="https://drive.google.com/file/d/1l_f42mf_I6Nc_VOA0v1h8Uxp7sr2wOBZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black">
+                  <a href="https://drive.google.com/file/d/1l_f42mf_I6Nc_VOA0v1h8Uxp7sr2wOBZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </a>
@@ -214,9 +214,9 @@ export default function Landing() {
                       <span className="font-medium">{tech.name}</span>
                       <span className="text-sm text-muted-foreground">{tech.level}%</span>
                     </div>
-                    <div className="w-full bg-border rounded-full h-2">
+                    <div className="w-full bg-gray-200 rounded-full h-2">
                       <motion.div
-                        className="bg-primary h-2 rounded-full"
+                        className="bg-green-500 h-2 rounded-full"
                         initial={{ width: 0 }}
                         whileInView={{ width: `${tech.level}%` }}
                         transition={{ duration: 1, delay: index * 0.1 }}
@@ -245,9 +245,9 @@ export default function Landing() {
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                     viewport={{ once: true }}
                   >
-                    <Badge variant="secondary" className="text-sm py-2 px-3">
+                    <div className="inline-block bg-gray-100 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 rounded-md px-3 py-2 text-sm">
                       {tech}
-                    </Badge>
+                    </div>
                   </motion.div>
                 ))}
               </div>
@@ -328,8 +328,8 @@ export default function Landing() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" variant="outline" asChild>
-              <Link to="/projects">
+            <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black" asChild>
+              <Link to="/projects" className="text-white">
                 View All Projects
                 <ExternalLink className="w-4 h-4 ml-2" />
               </Link>
@@ -384,8 +384,8 @@ export default function Landing() {
               </div>
               
               <div className="mt-8">
-                <Button size="lg" asChild>
-                  <a href="https://drive.google.com/file/d/1l_f42mf_I6Nc_VOA0v1h8Uxp7sr2wOBZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black" asChild>
+                  <a href="https://drive.google.com/file/d/1l_f42mf_I6Nc_VOA0v1h8Uxp7sr2wOBZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </a>
@@ -409,8 +409,8 @@ export default function Landing() {
                     Feel free to reach out through any of the channels listed, 
                     or visit my contact page for a detailed form.
                   </p>
-                  <Button className="w-full" asChild>
-                    <Link to="/contact">
+                  <Button className="w-full bg-black hover:bg-gray-800 text-white border border-black" asChild>
+                    <Link to="/contact" className="text-white">
                       Send Detailed Message
                       <Mail className="w-4 h-4 ml-2" />
                     </Link>

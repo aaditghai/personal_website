@@ -35,41 +35,82 @@
     --sidebar-ring: 163 163 163;
 }
 
-.dark {
-    --background: 26 26 26;             /* HSL values for dark mode - true neutral grays */
-    --foreground: 255 255 255;
-    --card: 42 42 42;                   /* Neutral dark gray */
-    --card-foreground: 255 255 255;
-    --popover: 42 42 42;
-    --popover-foreground: 255 255 255;
-    --primary: 255 255 255;
-    --primary-foreground: 26 26 26;
-    --secondary: 58 58 58;
-    --secondary-foreground: 255 255 255;
-    --muted: 58 58 58;
-    --muted-foreground: 160 160 160;
-    --accent: 58 58 58;
-    --accent-foreground: 255 255 255;
-    --destructive: 239 68 68;
-    --border: 58 58 58;
-    --input: 58 58 58;
-    --ring: 107 114 128;
-    --sidebar: 26 26 26;
-    --sidebar-foreground: 255 255 255;
-    --sidebar-primary: 255 255 255;
-    --sidebar-primary-foreground: 26 26 26;
-    --sidebar-accent: 58 58 58;
-    --sidebar-accent-foreground: 255 255 255;
-    --sidebar-border: 58 58 58;
-    --sidebar-ring: 107 114 128;
+/* Dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: 0 0% 0%;              /* Pure black background */
+        --foreground: 0 0% 100%;            /* Pure white foreground */
+        --card: 0 0% 7%;                    /* Very dark gray for cards */
+        --card-foreground: 0 0% 100%;       /* White text on cards */
+        --popover: 0 0% 7%;
+        --popover-foreground: 0 0% 100%;
+        --primary: 0 0% 100%;               /* White primary elements */
+        --primary-foreground: 0 0% 0%;      /* Black text on white primary */
+        --secondary: 0 0% 13%;              /* Dark secondary background */
+        --secondary-foreground: 0 0% 100%;
+        --muted: 0 0% 13%;
+        --muted-foreground: 0 0% 70%;       /* Light gray for muted text */
+        --accent: 0 0% 13%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 84% 60%;           /* Keep destructive red */
+        --border: 0 0% 19%;                 /* Dark gray borders */
+        --input: 0 0% 13%;                  /* Dark input backgrounds */
+        --ring: 220 13% 46%;
+        --sidebar: 0 0% 0%;                 /* Black sidebar */
+        --sidebar-foreground: 0 0% 100%;    /* White sidebar text */
+        --sidebar-primary: 0 0% 100%;
+        --sidebar-primary-foreground: 0 0% 0%;
+        --sidebar-accent: 0 0% 13%;
+        --sidebar-accent-foreground: 0 0% 100%;
+        --sidebar-border: 0 0% 19%;
+        --sidebar-ring: 220 13% 46%;
+    }
+
+    /* Direct overrides for dark mode */
+    body {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    /* Override common Tailwind classes */
+    .bg-white {
+        background-color: #1a1a1a !important;
+    }
+
+    .text-black {
+        color: white !important;
+    }
+
+    .text-gray-900 {
+        color: white !important;
+    }
+
+    .text-gray-800 {
+        color: #e5e5e5 !important;
+    }
+
+    .text-gray-600 {
+        color: #b3b3b3 !important;
+    }
+
+    .border-gray-200 {
+        border-color: #333 !important;
+    }
 }
 
 * {
     border-color: hsl(var(--border));
 }
 
+html {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+}
+
 body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
+    overscroll-behavior: none;
 }

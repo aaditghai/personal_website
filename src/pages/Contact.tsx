@@ -27,11 +27,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-white/90 dark:bg-gray-900/90 backdrop-blur">
+      <header className="border-b bg-background/90 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2 text-gray-600 hover:text-gray-700">
+          <Link to="/" className="flex items-center space-x-2 text-muted-foreground hover:text-foreground">
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
           </Link>
@@ -49,7 +49,7 @@ export default function Contact() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             I'm always interested in new opportunities, collaborations, and interesting projects. 
             Let's connect and discuss how we can work together.
           </p>
@@ -75,7 +75,7 @@ export default function Contact() {
                   >
                     <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold text-green-600 mb-2">Message Sent!</h3>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-muted-foreground">
                       Thank you for reaching out. I'll get back to you soon.
                     </p>
                   </motion.div>
@@ -158,28 +158,28 @@ export default function Contact() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-gray-600" />
+                  <Mail className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:aadighai@umich.edu" className="text-gray-600 hover:underline">
+                    <a href="mailto:aadighai@umich.edu" className="text-muted-foreground hover:text-foreground hover:underline">
                       aadighai@umich.edu
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-gray-600" />
+                  <MapPin className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-gray-600 dark:text-gray-300">Ann Arbor, Michigan</p>
+                    <p className="text-muted-foreground">Ann Arbor, Michigan</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-gray-600" />
+                  <Phone className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Availability</p>
-                    <p className="text-gray-600 dark:text-gray-300">Open to opportunities</p>
+                    <p className="text-muted-foreground">Open to opportunities</p>
                   </div>
                 </div>
               </CardContent>
@@ -195,12 +195,12 @@ export default function Contact() {
                   href="https://github.com/aaditghai" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted transition-colors"
                 >
-                  <Github className="w-5 h-5 text-gray-600" />
+                  <Github className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">GitHub</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">View my code and projects</p>
+                    <p className="text-sm text-muted-foreground">View my code and projects</p>
                   </div>
                 </a>
                 
@@ -208,12 +208,12 @@ export default function Contact() {
                   href="https://linkedin.com/in/aadighai" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted transition-colors"
                 >
-                  <Linkedin className="w-5 h-5 text-gray-600" />
+                  <Linkedin className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">LinkedIn</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">Professional network</p>
+                    <p className="text-sm text-muted-foreground">Professional network</p>
                   </div>
                 </a>
               </CardContent>
@@ -227,15 +227,15 @@ export default function Contact() {
               <CardContent>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-300">Response Time:</span>
+                    <span className="text-muted-foreground">Response Time:</span>
                     <span className="font-medium">Within 24 hours</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-300">Best Contact:</span>
+                    <span className="text-muted-foreground">Best Contact:</span>
                     <span className="font-medium">Email</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-300">Time Zone:</span>
+                    <span className="text-muted-foreground">Time Zone:</span>
                     <span className="font-medium">EST (UTC-5)</span>
                   </div>
                 </div>

@@ -46,15 +46,15 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-white/90 dark:bg-gray-900/90 backdrop-blur">
+      <header className="border-b bg-background/90 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2 text-gray-600 hover:text-gray-700">
+          <Link to="/" className="flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
           </Link>
-          <h1 className="text-xl font-semibold">Projects</h1>
+          <h1 className="text-xl font-semibold text-foreground">Projects</h1>
           <div></div>
         </div>
       </header>
@@ -67,8 +67,8 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold mb-4">My Projects</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-foreground">My Projects</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A collection of data science, machine learning, and web development projects 
             that showcase my technical skills and problem-solving abilities.
           </p>
@@ -95,7 +95,7 @@ export default function Projects() {
                   <CardTitle>{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                  <p className="text-muted-foreground mb-4">{project.description}</p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
@@ -106,7 +106,7 @@ export default function Projects() {
                   </div>
                   
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">{project.views} views</span>
+                    <span className="text-sm text-muted-foreground">{project.views} views</span>
                     <div className="flex space-x-2">
                       <Button variant="ghost" size="sm" asChild>
                         <a href={project.repo} target="_blank" rel="noopener noreferrer">

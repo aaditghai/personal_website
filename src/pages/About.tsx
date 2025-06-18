@@ -16,11 +16,11 @@ import { Link } from "react-router";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-white/90 dark:bg-gray-900/90 backdrop-blur">
+      <header className="border-b bg-background/90 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2 text-gray-600 hover:text-gray-700">
+          <Link to="/" className="flex items-center space-x-2 text-muted-foreground hover:text-foreground">
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
           </Link>
@@ -38,7 +38,7 @@ export default function About() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             I'm a passionate data science student at the University of Michigan, combining technical skills 
             with business acumen to solve real-world problems through data-driven insights.
           </p>
@@ -85,7 +85,7 @@ export default function About() {
           >
             <div>
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
-              <div className="space-y-4 text-gray-700 dark:text-gray-300">
+              <div className="space-y-4 text-muted-foreground">
                 <p>
                   Growing up, I was always fascinated by patterns and numbers. This curiosity led me to 
                   pursue Data Science at the University of Michigan, where I'm learning to transform 
@@ -108,20 +108,20 @@ export default function About() {
             <div>
               <h3 className="text-2xl font-bold mb-4">What Drives Me</h3>
               <div className="grid md:grid-cols-3 gap-4">
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-900/20 rounded-lg">
-                  <Code className="w-8 h-8 text-gray-600 mx-auto mb-2" />
+                <div className="text-center p-4 bg-muted rounded-lg">
+                  <Code className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
                   <h4 className="font-semibold">Programming</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Python, R, SQL, JavaScript</p>
+                  <p className="text-sm text-muted-foreground">Python, R, SQL, JavaScript</p>
                 </div>
-                <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                <div className="text-center p-4 bg-green-50 rounded-lg">
                   <BarChart3 className="w-8 h-8 text-green-600 mx-auto mb-2" />
                   <h4 className="font-semibold">Analytics</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Machine Learning, Statistics</p>
+                  <p className="text-sm text-muted-foreground">Machine Learning, Statistics</p>
                 </div>
-                <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                <div className="text-center p-4 bg-purple-50 rounded-lg">
                   <Database className="w-8 h-8 text-purple-600 mx-auto mb-2" />
                   <h4 className="font-semibold">Data Engineering</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">ETL, Databases, APIs</p>
+                  <p className="text-sm text-muted-foreground">ETL, Databases, APIs</p>
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function About() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <GraduationCap className="w-6 h-6 text-gray-600" />
+                    <GraduationCap className="w-6 h-6 text-muted-foreground" />
                     <span>Education</span>
                   </CardTitle>
                 </CardHeader>
@@ -147,18 +147,18 @@ export default function About() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold">University of Michigan, Ann Arbor</h3>
-                      <p className="text-gray-600 font-medium">Bachelor of Arts in Data Science & Economics</p>
-                      <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 mt-2">
+                      <p className="text-muted-foreground font-medium">Bachelor of Arts in Data Science & Economics</p>
+                      <div className="flex items-center space-x-2 text-muted-foreground mt-2">
                         <MapPin className="w-4 h-4" />
                         <span>Ann Arbor, Michigan</span>
                       </div>
-                      <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
+                      <div className="flex items-center space-x-2 text-muted-foreground">
                         <Calendar className="w-4 h-4" />
                         <span>Expected Graduation: May 2027 | GPA: 3.84</span>
                       </div>
                     </div>
                     
-                    <div className="border-l-4 border-gray-600 pl-4">
+                    <div className="border-l-4 border-primary pl-4">
                       <h4 className="font-semibold mb-2">Relevant Coursework</h4>
                       <div className="grid md:grid-cols-2 gap-2 text-sm">
                         <span>• Data Structures & Algorithms</span>
@@ -184,7 +184,7 @@ export default function About() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Briefcase className="w-6 h-6 text-gray-600" />
+                    <Briefcase className="w-6 h-6 text-muted-foreground" />
                     <span>Experience</span>
                   </CardTitle>
                 </CardHeader>
@@ -192,12 +192,12 @@ export default function About() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold">Software & Business Analyst Intern</h3>
-                      <p className="text-gray-600 font-medium">Next Play Games</p>
-                      <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
+                      <p className="text-muted-foreground font-medium">Next Play Games</p>
+                      <div className="flex items-center space-x-2 text-muted-foreground">
                         <Calendar className="w-4 h-4" />
                         <span>January 2025 - Present</span>
                       </div>
-                      <ul className="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
+                      <ul className="mt-3 space-y-2 text-muted-foreground">
                         <li>• Developing React-based web applications for sports analytics platform</li>
                         <li>• Building Python data processing pipelines for real-time game statistics</li>
                         <li>• Collaborating with cross-functional teams on product development</li>
@@ -219,31 +219,31 @@ export default function About() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Award className="w-6 h-6 text-gray-600" />
+                    <Award className="w-6 h-6 text-muted-foreground" />
                     <span>Achievements</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-gray-900 rounded-full mt-2"></div>
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                       <div>
                         <h4 className="font-semibold">Dean's List</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-300">University of Michigan (Fall 2023, Winter 2024)</p>
+                        <p className="text-sm text-muted-foreground">University of Michigan (Fall 2023, Winter 2024)</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-gray-900 rounded-full mt-2"></div>
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                       <div>
                         <h4 className="font-semibold">Data Science Projects</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-300">NBA Analytics, Stock Prediction, Music Recommendation Engine</p>
+                        <p className="text-sm text-muted-foreground">NBA Analytics, Stock Prediction, Music Recommendation Engine</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-gray-900 rounded-full mt-2"></div>
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                       <div>
                         <h4 className="font-semibold">Technical Skills</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-300">Python, R, SQL, JavaScript, React, Machine Learning</p>
+                        <p className="text-sm text-muted-foreground">Python, R, SQL, JavaScript, React, Machine Learning</p>
                       </div>
                     </div>
                   </div>
@@ -258,10 +258,10 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16 p-8 bg-gray-50 dark:bg-gray-800 rounded-lg"
+          className="text-center mt-16 p-8 bg-muted rounded-lg"
         >
           <h3 className="text-2xl font-bold mb-4">Let's Connect</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             I'm always excited to discuss data science, technology, and potential opportunities. 
             Whether you're looking for a collaborator, intern, or just want to chat about the latest 
             in machine learning, I'd love to hear from you.
