@@ -53,22 +53,22 @@ export default function About() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img
-              src="https://media.licdn.com/dms/image/v2/D5603AQGnhpDRHZIR6g/profile-displayphoto-shrink_400_400/B56ZXUbZPxGcAg-/0/1743025745140?e=1755129600&v=beta&t=RABTmOuJuNFNmNfM2Eglst312DGCNV1bPa2HK77KdA4"
+              src="/images/solo.png"
               alt="Professional headshot"
               className="w-full h-48 object-cover rounded-lg"
             />
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              src="/images/family.png"
               alt="University campus"
               className="w-full h-48 object-cover rounded-lg"
             />
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              src="/images/michFriends.png"
               alt="Data visualization"
               className="w-full h-48 object-cover rounded-lg"
             />
             <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              src="/images/homeFriends.png"
               alt="Analytics workspace"
               className="w-full h-48 object-cover rounded-lg"
             />
@@ -108,18 +108,18 @@ export default function About() {
             <div>
               <h3 className="text-2xl font-bold mb-4">What Drives Me</h3>
               <div className="grid md:grid-cols-3 gap-4">
-                <div className="text-center p-4 bg-muted rounded-lg">
-                  <Code className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
+                <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border">
+                  <Code className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
                   <h4 className="font-semibold">Programming</h4>
                   <p className="text-sm text-muted-foreground">Python, R, SQL, JavaScript</p>
                 </div>
-                <div className="text-center p-4 bg-green-50 rounded-lg">
-                  <BarChart3 className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border">
+                  <BarChart3 className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
                   <h4 className="font-semibold">Analytics</h4>
                   <p className="text-sm text-muted-foreground">Machine Learning, Statistics</p>
                 </div>
-                <div className="text-center p-4 bg-purple-50 rounded-lg">
-                  <Database className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border">
+                  <Database className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
                   <h4 className="font-semibold">Data Engineering</h4>
                   <p className="text-sm text-muted-foreground">ETL, Databases, APIs</p>
                 </div>
@@ -258,26 +258,26 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16 p-8 bg-muted rounded-lg"
+          className="text-center mt-16 p-8 bg-white dark:bg-black rounded-lg border border-border"
         >
-          <h3 className="text-2xl font-bold mb-4">Let's Connect</h3>
+          <h3 className="text-2xl font-bold mb-4 text-foreground">Let's Connect</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             I'm always excited to discuss data science, technology, and potential opportunities. 
             Whether you're looking for a collaborator, intern, or just want to chat about the latest 
             in machine learning, I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg">
-              <Link to="/contact">
-                Get In Touch
-              </Link>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/projects">
-                View My Work
-              </Link>
-            </Button>
-          </div>
+  <Button asChild size="lg" className="bg-black dark:bg-transparent text-white dark:text-white border-0 dark:border dark:border-border hover:bg-gray-800 dark:hover:bg-gray-800">
+    <Link to="/contact">
+      Get In Touch
+    </Link>
+  </Button>
+  <Button variant="outline" size="lg" asChild className="bg-black dark:bg-transparent text-white dark:text-white border-0 dark:border dark:border-border hover:bg-gray-800 dark:hover:bg-gray-800">
+    <Link to="/projects">
+      View My Work
+    </Link>
+  </Button>
+</div>
         </motion.div>
       </div>
     </div>

@@ -92,6 +92,7 @@ export default function Contact() {
                           name="name"
                           required
                           placeholder="Your full name"
+                          className="placeholder:text-gray-400"
                         />
                       </div>
                       <div>
@@ -104,6 +105,7 @@ export default function Contact() {
                           name="email"
                           required
                           placeholder="your.email@example.com"
+                          className="placeholder:text-gray-400"
                         />
                       </div>
                     </div>
@@ -118,6 +120,7 @@ export default function Contact() {
                         name="subject"
                         required
                         placeholder="What's this about?"
+                        className="placeholder:text-gray-400"
                       />
                     </div>
                     
@@ -131,10 +134,11 @@ export default function Contact() {
                         required
                         rows={6}
                         placeholder="Tell me about your project, opportunity, or just say hello..."
+                        className="placeholder:text-gray-400"
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full" size="lg">
+                    <Button type="submit" className="bg-black dark:bg-transparent text-white dark:text-white border-0 dark:border dark:border-border hover:bg-gray-800 dark:hover:bg-gray-800" size="lg">
                       <Send className="w-4 h-4 mr-2" />
                       Send Message
                     </Button>

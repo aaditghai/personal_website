@@ -16,7 +16,6 @@ export default function Projects() {
       description: "Real-time AI-powered referee system for sports games using computer vision and machine learning to make accurate calls.",
       image: "https://media.licdn.com/dms/image/v2/D4D22AQH7IpNumR0OiA/feedshare-shrink_800/B4DZYW0XgpG8Ak-/0/1744139549094?e=2147483647&v=beta&t=4bUb7jSG5MoTnSSn3UsErzFfwupHJMnkDx-_8M8UAvE",
       tags: ["Python", "Computer Vision", "TensorFlow", "React"],
-      views: "2,847",
       repo: "https://www.nextplaygamesus.com/?srsltid=AfmBOopoIXzBys5i8jD2BFTg8k0is14klNk7xPpouYlYwsHURwO4yzjl"
     },
     {
@@ -24,7 +23,6 @@ export default function Projects() {
       description: "Statistical analysis of shooting trends in professional basketball",
       image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tags: ["Python", "Pandas", "Matplotlib", "NBA API"],
-      views: "1,847",
       repo: "https://github.com/aadighai/nba-midrange-analysis"
     },
     {
@@ -32,7 +30,6 @@ export default function Projects() {
       description: "LSTM neural network for financial market prediction",
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tags: ["TensorFlow", "Python", "NumPy", "Yahoo Finance API"],
-      views: "2,156",
       repo: "https://github.com/aadighai/stock-price-predictor"
     },
     {
@@ -40,7 +37,6 @@ export default function Projects() {
       description: "Hybrid recommendation system with ML algorithms",
       image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tags: ["React", "Node.js", "Python", "Machine Learning"],
-      views: "892",
       repo: "https://github.com/aadighai/music-recommendation-engine"
     }
   ];
@@ -99,14 +95,13 @@ export default function Projects() {
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary">
+                      <Badge key={tag} variant="secondary" className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
                         {tag}
                       </Badge>
                     ))}
                   </div>
                   
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">{project.views} views</span>
                     <div className="flex space-x-2">
                       <Button variant="ghost" size="sm" asChild>
                         <a href={project.repo} target="_blank" rel="noopener noreferrer">

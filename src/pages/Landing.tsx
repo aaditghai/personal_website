@@ -310,7 +310,7 @@ export default function Landing() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tags.map((tag) => (
-                        <Badge key={tag} variant="outline" className="text-xs">
+                        <Badge key={tag} variant="outline" className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
                           {tag}
                         </Badge>
                       ))}
