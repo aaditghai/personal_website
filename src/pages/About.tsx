@@ -53,7 +53,7 @@ export default function About() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img
-              src="/images/solo.png"
+              src="./images/solo.png"
               alt="Professional headshot"
               className="w-full h-48 object-cover rounded-lg"
             />
