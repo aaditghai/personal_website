@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import soloImage from '/images/solo.png';
 import { 
   ArrowLeft,
   GraduationCap,
@@ -54,7 +53,7 @@ export default function About() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img
-              src = {soloImage}
+              src = "/images/solo.png"
               alt="Professional headshot"
               className="w-full h-48 object-cover rounded-lg"
             />
