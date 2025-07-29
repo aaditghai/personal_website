@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-//import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
   ArrowLeft,
@@ -95,32 +95,36 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-              {/* GitHub Link */}
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button outline flex items-center space-x-2"
+                <Button
+                variant="outline"
+                className="flex items-center space-x-2"
+                disabled={!project.repo}
+                title={project.repo ? "View GitHub" : "GitHub Not Available"}
+                onClick={() => {
+                  if (project.repo) {
+                    window.open(project.repo, "_blank", "noopener,noreferrer");
+                  }
+                }}
               >
                 <Github size={16} />
                 <span>GitHub</span>
-              </a>
+              </Button>
 
-              {/* Demo Link */}
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button outline flex items-center space-x-2"
-                aria-disabled={!project.demo}
+              <Button
+                variant="outline"
+                className="flex items-center space-x-2"
+                disabled={!project.demo}
                 title={project.demo ? "View Demo" : "Demo Not Available"}
-                onClick={(e) => {
-                  if (!project.demo) e.preventDefault(); // prevent click if no demo
+                onClick={() => {
+                  if (project.demo) {
+                    window.open(project.demo, "_blank", "noopener,noreferrer");
+                  }
                 }}
               >
                 <ExternalLink size={16} />
                 <span>Demo</span>
-              </a>
+              </Button>
+
             </div>
               </CardContent>
             </Card>
