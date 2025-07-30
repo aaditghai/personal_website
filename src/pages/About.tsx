@@ -7,7 +7,6 @@ import {
   Briefcase,
   MapPin,
   Calendar,
-  Award,
   Code,
   Database,
   BarChart3
