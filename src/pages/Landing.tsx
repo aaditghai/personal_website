@@ -68,7 +68,7 @@ export default function Landing() {
     {
       title: "SnapCode",
       description: "Converts UI screenshots into HTML/CSS/JS code",
-      image: "/public/images/download.png",
+      image: "/images/download.png",
       tags: ["React", "Hugging Face", "RESTful APIs", "Python"],
       link: "/projects"
     }
