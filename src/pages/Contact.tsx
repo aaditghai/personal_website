@@ -175,7 +175,7 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">Ann Arbor, Michigan</p>
+                    <p className="text-muted-foreground">Missouri City, Texas</p>
                   </div>
                 </div>
                 
@@ -183,7 +183,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Availability</p>
-                    <p className="text-muted-foreground">Open to opportunities</p>
+                    <p className="text-muted-foreground">Looking for Summer 2026 Internships</p>
                   </div>
                 </div>
               </CardContent>
@@ -224,27 +224,7 @@ export default function Contact() {
             </Card>
 
             {/* Quick Info */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Quick Info</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Response Time:</span>
-                    <span className="font-medium">Within 24 hours</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Best Contact:</span>
-                    <span className="font-medium">Email</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Time Zone:</span>
-                    <span className="font-medium">EST (UTC-5)</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+
           </motion.div>
         </div>
       </div>

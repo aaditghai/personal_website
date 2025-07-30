@@ -39,7 +39,7 @@ export default function About() {
         >
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate data science student at the University of Michigan, combining technical skills 
+            I'm a passionate Data Science and Economics student at the University of Michigan, combining technical skills 
             with business acumen to solve real-world problems through data-driven insights.
           </p>
         </motion.div>
@@ -87,19 +87,17 @@ export default function About() {
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Growing up, I was always fascinated by patterns and numbers. This curiosity led me to 
-                  pursue Data Science at the University of Michigan, where I'm learning to transform 
-                  raw data into meaningful insights that drive decision-making.
+                I’ve always been drawn to patterns, whether in sports, behavior, or systems, and curious about what drives outcomes beneath the surface. That mindset naturally pulled me toward data, but also toward the bigger picture: incentives, decisions, and how people interact with products and information.
                 </p>
                 <p>
-                  My passion lies at the intersection of technology and business. I believe that the most 
-                  impactful solutions come from understanding both the technical capabilities and the 
-                  real-world problems they can solve.
+                At Michigan, I began building the technical foundation to work with data at scale by writing models, building tools, and exploring real-world applications. Along the way, I found myself gravitating toward projects that lived at the intersection of technology and people. I didn’t just want to answer questions, I wanted to build things that solved meaningful problems, were intuitive to use, and helped others make better decisions.
+
                 </p>
                 <p>
-                  Currently, I'm gaining hands-on experience as a Software & Business Analyst Intern at 
-                  Next Play Games, where I'm working on sports analytics platforms and learning how 
-                  data science applications work in production environments.
+                That blend of analytical thinking, product curiosity, and a drive to build led me into roles across software, data, and strategy. Most recently, I’ve been working at Next Play Games on the AI team to craft an AI referee system based on user demands, combining engineering with product and data insights to improve user experience and surface what actually matters to our users.
+                </p>
+                <p>
+                Now, I’m focused on projects where I can work end-to-end: from asking the right questions, to designing and building the solution, to seeing how it impacts users in the real world.
                 </p>
               </div>
             </div>
@@ -111,7 +109,7 @@ export default function About() {
                 <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border">
                   <Code className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
                   <h4 className="font-semibold">Programming</h4>
-                  <p className="text-sm text-muted-foreground">Python, R, SQL, JavaScript</p>
+                  <p className="text-sm text-muted-foreground">Python, C++, SQL, JavaScript</p>
                 </div>
                 <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border">
                   <BarChart3 className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
@@ -147,7 +145,7 @@ export default function About() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold">University of Michigan, Ann Arbor</h3>
-                      <p className="text-muted-foreground font-medium">Bachelor of Arts in Data Science & Economics</p>
+                      <p className="text-muted-foreground font-medium">Bachelor of Science in Data Science, Economics</p>
                       <div className="flex items-center space-x-2 text-muted-foreground mt-2">
                         <MapPin className="w-4 h-4" />
                         <span>Ann Arbor, Michigan</span>
@@ -161,12 +159,13 @@ export default function About() {
                     <div className="border-l-4 border-primary pl-4">
                       <h4 className="font-semibold mb-2">Relevant Coursework</h4>
                       <div className="grid md:grid-cols-2 gap-2 text-sm">
-                        <span>• Data Structures & Algorithms</span>
-                        <span>• Statistical Learning</span>
-                        <span>• Database Management</span>
-                        <span>• Econometrics</span>
-                        <span>• Machine Learning</span>
-                        <span>• Financial Economics</span>
+                        <span>• Data Structures and Algorithms</span>
+                        <span>• Object-Oriented Programming</span>
+                        <span>• Discrete Mathematics</span>
+                        <span>• Probability</span>
+                        <span>• Multivariable Calculus</span>
+                        <span>• Statistics and Data Analysis</span>
+                        <span>• Intermediate Microeconomics</span>
                       </div>
                     </div>
                   </div>
@@ -185,26 +184,27 @@ export default function About() {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <Briefcase className="w-6 h-6 text-muted-foreground" />
-                    <span>Experience</span>
+                    <span>Current Job</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-xl font-semibold">Software & Business Analyst Intern</h3>
+                      <h3 className="text-xl font-semibold">Software Engineer Intern</h3>
                       <p className="text-muted-foreground font-medium">Next Play Games</p>
                       <div className="flex items-center space-x-2 text-muted-foreground">
                         <Calendar className="w-4 h-4" />
-                        <span>January 2025 - Present</span>
+                        <span>May 2025 - Present</span>
                       </div>
                       <ul className="mt-3 space-y-2 text-muted-foreground">
-                        <li>• Developing React-based web applications for sports analytics platform</li>
-                        <li>• Building Python data processing pipelines for real-time game statistics</li>
-                        <li>• Collaborating with cross-functional teams on product development</li>
-                        <li>• Implementing data visualization tools for sports performance metrics</li>
+                        <li>• Engineered computer vision AI referee model using TensorFlow to automatically detect and classify live football
+                        plays, training on 15,000+ game scenarios to achieve 79% accuracy in identifying key players and events</li>
+                        <li>• Integrated NFL API with AI model validation pipeline using Go backend and AWS Lambda to cross-reference
+                        real-time predictions with live game data, processing 500+ live plays per game with 0.3-second latency</li>
                       </ul>
                     </div>
                   </div>
+                  
                 </CardContent>
               </Card>
             </motion.div>
@@ -216,39 +216,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-2">
-                    <Award className="w-6 h-6 text-muted-foreground" />
-                    <span>Achievements</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                      <div>
-                        <h4 className="font-semibold">Dean's List</h4>
-                        <p className="text-sm text-muted-foreground">University of Michigan (Fall 2023, Winter 2024)</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                      <div>
-                        <h4 className="font-semibold">Data Science Projects</h4>
-                        <p className="text-sm text-muted-foreground">NBA Analytics, Stock Prediction, Music Recommendation Engine</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                      <div>
-                        <h4 className="font-semibold">Technical Skills</h4>
-                        <p className="text-sm text-muted-foreground">Python, R, SQL, JavaScript, React, Machine Learning</p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+
             </motion.div>
           </div>
         </div>
@@ -262,9 +230,8 @@ export default function About() {
         >
           <h3 className="text-2xl font-bold mb-4 text-foreground">Let's Connect</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            I'm always excited to discuss data science, technology, and potential opportunities. 
-            Whether you're looking for a collaborator, intern, or just want to chat about the latest 
-            in machine learning, I'd love to hear from you.
+            I'm always excited to discuss new technology and potential opportunities. 
+            Whether you're looking for a collaborator, intern, or just want to chat, I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
   <Button asChild size="lg" className="bg-black dark:bg-transparent text-white dark:text-white border-0 dark:border dark:border-border hover:bg-gray-800 dark:hover:bg-gray-800">
