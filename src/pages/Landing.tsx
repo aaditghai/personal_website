@@ -146,7 +146,7 @@ export default function Landing() {
             >
               <div className="relative">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQGnhpDRHZIR6g/profile-displayphoto-shrink_400_400/B56ZXUbZPxGcAg-/0/1743025745140?e=1755129600&v=beta&t=RABTmOuJuNFNmNfM2Eglst312DGCNV1bPa2HK77KdA4"
+                  src="/images/landingpic.png"
                   alt="Aadi Ghai"
                   className="w-80 h-80 rounded-full object-cover shadow-2xl"
                 />
