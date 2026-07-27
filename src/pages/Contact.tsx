@@ -18,12 +18,33 @@ import { useState } from "react";
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Form submission logic here
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const form = e.currentTarget;
+      const response = await fetch("https://formspree.io/f/mdaqboog", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setIsSubmitted(true);
+      form.reset();
+    } catch {
+      setError("Something went wrong. Please try again or email me directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -80,7 +101,7 @@ export default function Contact() {
                     </p>
                   </motion.div>
                 ) : (
-                  <form action="https://formspree.io/f/xpznvqko" method="POST" onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -137,10 +158,19 @@ export default function Contact() {
                         className="placeholder:text-gray-400"
                       />
                     </div>
+
+                    {error && (
+                      <p className="text-sm text-red-600">{error}</p>
+                    )}
                     
-                    <Button type="submit" className="bg-black dark:bg-transparent text-white dark:text-white border-0 dark:border dark:border-border hover:bg-gray-800 dark:hover:bg-gray-800" size="lg">
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="bg-black dark:bg-transparent text-white dark:text-white border-0 dark:border dark:border-border hover:bg-gray-800 dark:hover:bg-gray-800"
+                      size="lg"
+                    >
                       <Send className="w-4 h-4 mr-2" />
-                      Send Message
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 )}
@@ -165,8 +195,8 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:aadighai@umich.edu" className="text-muted-foreground hover:text-foreground hover:underline">
-                      aadighai@umich.edu
+                    <a href="mailto:aaditylerghai@gmail.com" className="text-muted-foreground hover:text-foreground hover:underline">
+                      aaditylerghai@gmail.com
                     </a>
                   </div>
                 </div>
@@ -175,7 +205,7 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">Missouri City, Texas</p>
+                    <p className="text-muted-foreground">Houston, Texas</p>
                   </div>
                 </div>
                 
@@ -183,7 +213,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">Availability</p>
-                    <p className="text-muted-foreground">Looking for Summer 2026 Internships</p>
+                    <p className="text-muted-foreground">Looking for Summer 2027 Internships</p>
                   </div>
                 </div>
               </CardContent>

@@ -7,9 +7,9 @@ import {
   Briefcase,
   MapPin,
   Calendar,
-  Code,
-  Database,
-  BarChart3
+  Network,
+  Zap,
+  Sparkles
 } from "lucide-react";
 import { Link } from "react-router";
 
@@ -38,7 +38,7 @@ export default function About() {
         >
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate Data Science and Economics student at the University of Michigan, combining technical skills 
+            I'm a passionate Computer Science and Economics student at the University of Michigan, combining technical skills 
             with business acumen to solve real-world problems through data-driven insights.
           </p>
         </motion.div>
@@ -93,32 +93,32 @@ export default function About() {
 
                 </p>
                 <p>
-                That blend of analytical thinking, product curiosity, and a drive to build led me into roles across software, data, and strategy. Most recently, I’ve been working at Next Play Games on the AI team to craft an AI referee system based on user demands, combining engineering with product and data insights to improve user experience and surface what actually matters to our users.
+                That blend of analytical thinking, product curiosity, and a drive to build led me into roles across software, data, and strategy. Most recently, I’ve been working at PrizePicks as a Backend Software Engineer Intern, building real-time event-driven systems that power rewards and messaging for millions of users.
                 </p>
                 <p>
-                Now, I’m focused on projects where I can work end-to-end: from asking the right questions, to designing and building the solution, to seeing how it impacts users in the real world.
+                Now, I’m focused on projects where I can work end-to-end: from asking the right questions, to designing and building the solution, to seeing how it impacts users in the real world. I’m also intentional about using AI to optimize my workflow, speeding up research, iteration, and decision-making so I can spend more time on the problems that matter.
                 </p>
               </div>
             </div>
 
-            {/* Skills & Interests */}
+            {/* Focus Areas */}
             <div>
-              <h3 className="text-2xl font-bold mb-4">What Drives Me</h3>
+              <h3 className="text-2xl font-bold mb-4">What I'm Focused On</h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border">
-                  <Code className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
-                  <h4 className="font-semibold">Programming</h4>
-                  <p className="text-sm text-muted-foreground">Python, C++, SQL, JavaScript</p>
+                  <Network className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+                  <h4 className="font-semibold">Distributed Systems</h4>
+                  <p className="text-sm text-muted-foreground">Event-driven pipelines, workers, and scalable backends</p>
                 </div>
                 <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border">
-                  <BarChart3 className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
-                  <h4 className="font-semibold">Analytics</h4>
-                  <p className="text-sm text-muted-foreground">Machine Learning, Statistics</p>
+                  <Zap className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
+                  <h4 className="font-semibold">Real-time Backend</h4>
+                  <p className="text-sm text-muted-foreground">Low-latency messaging, streams, and live data systems</p>
                 </div>
                 <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border">
-                  <Database className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
-                  <h4 className="font-semibold">Data Engineering</h4>
-                  <p className="text-sm text-muted-foreground">ETL, Databases, APIs</p>
+                  <Sparkles className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
+                  <h4 className="font-semibold">AI-Assisted Building</h4>
+                  <p className="text-sm text-muted-foreground">Using AI to ship faster and solve harder problems</p>
                 </div>
               </div>
             </div>
@@ -144,14 +144,14 @@ export default function About() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold">University of Michigan, Ann Arbor</h3>
-                      <p className="text-muted-foreground font-medium">Bachelor of Science in Data Science, Economics</p>
+                      <p className="text-muted-foreground font-medium">Bachelor of Science in Computer Science and Economics</p>
                       <div className="flex items-center space-x-2 text-muted-foreground mt-2">
                         <MapPin className="w-4 h-4" />
                         <span>Ann Arbor, Michigan</span>
                       </div>
                       <div className="flex items-center space-x-2 text-muted-foreground">
                         <Calendar className="w-4 h-4" />
-                        <span>Expected Graduation: May 2027 | GPA: 3.84</span>
+                        <span>Expected Graduation: May 2028 | GPA: 3.7</span>
                       </div>
                     </div>
                     
@@ -159,12 +159,14 @@ export default function About() {
                       <h4 className="font-semibold mb-2">Relevant Coursework</h4>
                       <div className="grid md:grid-cols-2 gap-2 text-sm">
                         <span>• Data Structures and Algorithms</span>
-                        <span>• Object-Oriented Programming</span>
+                        <span>• Machine Learning</span>
+                        <span>• Web Systems</span>
+                        <span>• Computer Organization</span>
+                        <span>• Theory of Computation</span>
+                        <span>• Linear Algebra</span>
                         <span>• Discrete Mathematics</span>
                         <span>• Probability</span>
-                        <span>• Multivariable Calculus</span>
-                        <span>• Statistics and Data Analysis</span>
-                        <span>• Intermediate Microeconomics</span>
+                        <span>• Object-Oriented Programming</span>
                       </div>
                     </div>
                   </div>
@@ -189,17 +191,16 @@ export default function About() {
                 <CardContent>
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-xl font-semibold">Software Engineer Intern</h3>
-                      <p className="text-muted-foreground font-medium">Next Play Games</p>
+                      <h3 className="text-xl font-semibold">Backend Software Engineer Intern</h3>
+                      <p className="text-muted-foreground font-medium">PrizePicks</p>
                       <div className="flex items-center space-x-2 text-muted-foreground">
                         <Calendar className="w-4 h-4" />
-                        <span>May 2025 - Present</span>
+                        <span>May 2026 - Present</span>
                       </div>
                       <ul className="mt-3 space-y-2 text-muted-foreground">
-                        <li>• Engineered computer vision AI referee model using TensorFlow to automatically detect and classify live football
-                        plays, training on 15,000+ game scenarios to achieve 79% accuracy in identifying key players and events</li>
-                        <li>• Integrated NFL API with AI model validation pipeline using Go backend and AWS Lambda to cross-reference
-                        real-time predictions with live game data, processing 500+ live plays per game with 0.3-second latency</li>
+                        <li>• Owned development of end-to-end event-driven rewards synchronization system using Ruby on Rails, React Native, Sidekiq, and Centrifugo, replacing delayed polling to reduce latency from 5s to under 250ms for millions of users</li>
+                        <li>• Published a reusable Ruby gem that standardized real-time messaging patterns across 5+ engineering teams, simplifying WebSocket adoption while reducing redundant API traffic and backend overhead across services</li>
+                        <li>• Conducted load testing and performance validation of Kubernetes-hosted real-time messaging infrastructure, validating scalability and fault tolerance under 10,000+ concurrent connections prior to platform-wide rollout</li>
                       </ul>
                     </div>
                   </div>
