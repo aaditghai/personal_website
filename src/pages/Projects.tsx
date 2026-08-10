@@ -17,15 +17,15 @@ export default function Projects() {
       image: "/images/atlas.png",
       tags: ["Go", "Redis", "PostgreSQL", "Docker"],
       repo: "https://github.com/aaditghai/atlas",
-      demo: ""
+      demo: "https://atlas-analytics-app.vercel.app/"
     },
     {
-      title: "Catalyst", 
-      description: "Autonomous investment committee coordinating AI agents across fundamentals, valuation, and risk to generate cited investment research memos.",
-      image: "/images/catalyst.png",
-      tags: ["Python", "FastAPI", "Next.js", "PostgreSQL", "Temporal"],
-      repo: "",
-      demo: ""
+      title: "Mercury", 
+      description: "Crypto asset exchange with a Rust matching engine, in-memory order book, and pre-trade risk checks sustaining 100K+ orders/sec.",
+      image: "/images/mercury.png",
+      tags: ["Rust", "Matching Engine", "Order Book", "Concurrency"],
+      repo: "https://github.com/aaditghai/mercury",
+      demo: "https://mercury-exchange.vercel.app/"
     },
     {
       title: "Watchly", 

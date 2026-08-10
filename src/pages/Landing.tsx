@@ -54,10 +54,10 @@ export default function Landing() {
       link: "/projects"
     },
     {
-      title: "Catalyst",
-      description: "Autonomous investment committee coordinating AI agents across fundamentals, valuation, and risk to generate cited investment research memos.",
-      image: "/images/catalyst.png",
-      tags: ["Python", "FastAPI", "Next.js", "PostgreSQL", "Temporal"],
+      title: "Mercury",
+      description: "Crypto asset exchange with a Rust matching engine, in-memory order book, and pre-trade risk checks sustaining 100K+ orders/sec.",
+      image: "/images/mercury.png",
+      tags: ["Rust", "Matching Engine", "Order Book", "Concurrency"],
       link: "/projects"
     },
     {
@@ -82,7 +82,7 @@ export default function Landing() {
             <Link to="/contact" className="text-foreground hover:text-muted-foreground transition-colors">Contact</Link>
           </nav>
           <Button size="sm" className="bg-black hover:bg-gray-800 text-white border border-black">
-            <a href="https://drive.google.com/file/d/1KnjjwEvOfnOxxsLx8fNr7CuJzl4t_Qrw/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
+            <a href="https://drive.google.com/file/d/1JsUfiv-G0ibgyzaS0TRldXQ0XMydwaQP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
               <Download className="w-4 h-4 mr-2" />
               Resume
             </a>
@@ -122,7 +122,7 @@ export default function Landing() {
                   </Link>
                 </Button>
                 <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black">
-                  <a href="https://drive.google.com/file/d/1KnjjwEvOfnOxxsLx8fNr7CuJzl4t_Qrw/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
+                  <a href="https://drive.google.com/file/d/1JsUfiv-G0ibgyzaS0TRldXQ0XMydwaQP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </a>
@@ -351,7 +351,7 @@ export default function Landing() {
               
               <div className="mt-8">
                 <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black" asChild>
-                  <a href="https://drive.google.com/file/d/1KnjjwEvOfnOxxsLx8fNr7CuJzl4t_Qrw/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
+                  <a href="https://drive.google.com/file/d/1JsUfiv-G0ibgyzaS0TRldXQ0XMydwaQP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </a>

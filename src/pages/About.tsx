@@ -185,17 +185,26 @@ export default function About() {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <Briefcase className="w-6 h-6 text-muted-foreground" />
-                    <span>Current Job</span>
+                    <span>Most Recent Experience</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-xl font-semibold">Backend Software Engineer Intern</h3>
-                      <p className="text-muted-foreground font-medium">PrizePicks</p>
-                      <div className="flex items-center space-x-2 text-muted-foreground">
-                        <Calendar className="w-4 h-4" />
-                        <span>May 2026 - Present</span>
+                      <div className="flex items-start gap-4 mb-3">
+                        <img
+                          src="https://assets.actionnetwork.com/159609_PrizePicks-Logo.webp"
+                          alt="PrizePicks logo"
+                          className="h-10 w-auto object-contain shrink-0"
+                        />
+                        <div>
+                          <h3 className="text-xl font-semibold">Backend Software Engineer Intern</h3>
+                          <p className="text-muted-foreground font-medium">PrizePicks</p>
+                          <div className="flex items-center space-x-2 text-muted-foreground">
+                            <Calendar className="w-4 h-4" />
+                            <span>May 2026 - Present</span>
+                          </div>
+                        </div>
                       </div>
                       <ul className="mt-3 space-y-2 text-muted-foreground">
                         <li>• Owned development of end-to-end event-driven rewards synchronization system using Ruby on Rails, React Native, Sidekiq, and Centrifugo, replacing delayed polling to reduce latency from 5s to under 250ms for millions of users</li>
