@@ -82,7 +82,7 @@ export default function Landing() {
             <Link to="/contact" className="text-foreground hover:text-muted-foreground transition-colors">Contact</Link>
           </nav>
           <Button size="sm" className="bg-black hover:bg-gray-800 text-white border border-black">
-            <a href="https://drive.google.com/file/d/1JsUfiv-G0ibgyzaS0TRldXQ0XMydwaQP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
+            <a href="https://drive.google.com/file/d/1pIHGd8fzktt_W_mntWld7yjnt_C8estt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
               <Download className="w-4 h-4 mr-2" />
               Resume
             </a>
@@ -122,7 +122,7 @@ export default function Landing() {
                   </Link>
                 </Button>
                 <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black">
-                  <a href="https://drive.google.com/file/d/1JsUfiv-G0ibgyzaS0TRldXQ0XMydwaQP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
+                  <a href="https://drive.google.com/file/d/1pIHGd8fzktt_W_mntWld7yjnt_C8estt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </a>
@@ -351,7 +351,7 @@ export default function Landing() {
               
               <div className="mt-8">
                 <Button size="lg" className="bg-black hover:bg-gray-800 text-white border border-black" asChild>
-                  <a href="https://drive.google.com/file/d/1JsUfiv-G0ibgyzaS0TRldXQ0XMydwaQP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
+                  <a href="https://drive.google.com/file/d/1pIHGd8fzktt_W_mntWld7yjnt_C8estt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     <Download className="w-4 h-4 mr-2" />
                     Resume
                   </a>
